@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FundamentalPatternsController;
+use App\Http\Controllers\CreationalPatternsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,8 @@ use App\Http\Controllers\FundamentalPatternsController;
 */
 
 Route::get('/fundamentals/property-container', [FundamentalPatternsController::class, 'PropertyContainer']);
-
 Route::get('/fundamentals/delegation', [FundamentalPatternsController::class, 'Delegation']);
-
 Route::get('/fundamentals/event-channel', [FundamentalPatternsController::class, 'EventChannel']);
+
+
+Route::get('/creational/abstract-factory', [CreationalPatternsController::class, 'AbstractFactory']);
